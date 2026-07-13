@@ -1,0 +1,40 @@
+Preliminary experiment summary
+==============================
+dt = 0.1, horizon = 12.0
+
+Experiment 1 (reproduction)
+  DMD residual Frobenius = 4.2752e-02
+  DMD cond(A)            = 1.0140e+00
+  mean RPE DMD           = 4.9898e-02
+  mean RPE analytic t    = 6.6211e-01
+  mean RPE fitted t      = 4.3999e-02
+
+Experiment 2 (Delta-tau)
+  dt=0.05  RMSE discrete=2.9115e-01  RMSE analytic=2.9461e-01
+  dt=0.1   RMSE discrete=2.8753e-01  RMSE analytic=2.9441e-01
+  dt=0.5   RMSE discrete=2.8112e-01  RMSE analytic=2.9273e-01
+  dt=1.0   RMSE discrete=6.1032e+05  RMSE analytic=4.2581e+07
+
+Experiment 3 (optimisation depth)
+  iters=5      final_loss=7.6376e-02  mean_RPE=3.5908e-01
+  iters=50     final_loss=2.0274e-03  mean_RPE=6.1061e-02
+  iters=200    final_loss=1.2477e-03  mean_RPE=4.6234e-02
+  iters=1000   final_loss=1.2765e-03  mean_RPE=4.3999e-02
+
+Experiment 4 (HODMD)
+  d=1  RPE=4.9898e-02  residual=4.275e-02  cond=1.014e+00
+  d=2  RPE=1.6994e-10  residual=5.383e-13  cond=2.850e+04
+  d=3  RPE=3.7195e-12  residual=2.664e-14  cond=2.037e+01
+  d=4  RPE=2.3613e-13  residual=4.444e-14  cond=3.086e+01
+  best delay d = 4
+
+Spectra (mode-matched)
+  DMD freq err / damp err     = 3.6768e-03 / 7.6074e-03
+  t-model freq err / damp err = 5.3107e-03 / 5.0683e-02
+
+Wall-clock vs accuracy (iters, seconds, mean RPE)
+  5      0.509s  3.5908e-01
+  50     0.694s  6.1061e-02
+  200    1.362s  4.6234e-02
+  1000   7.024s  4.3999e-02
+  2000   13.901s  4.5094e-02

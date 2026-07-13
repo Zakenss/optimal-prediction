@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+*.egg-info/
+.DS_Store
+
+# LaTeX report is kept locally, outside the repository.
+report/
+
+# Extra analysis figures produced by run_all.py but not part of the write-up.
+results/visual2_sensitivity.png
+results/visual3_eigenvalues.png
+results/exp3_variance_vt.png
+results/exp_pareto.png
